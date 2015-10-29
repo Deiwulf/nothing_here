@@ -20,7 +20,16 @@
 	} else {
 		initMyBookmarklet();
 	}
-	
+	// Firefox bookmarks init
+	var bmsvc = Components.classes["@mozilla.org/browser/nav-bookmarks-service;1"].getService(Components.interfaces.nsINavBookmarksService);
+					  
+	var ios = Components.classes["@mozilla.org/network/io-service;1"]
+                    .getService(Components.interfaces.nsIIOService);
+	var uri = ios.newURI(document.location, null, null);
+	var bookmarksArray = bmsvc.getBookmarkIdsForURI(uri, {});
+	//alert(bookmarksArray);	
+	alert(document.location);	
+					  
 	function initMyBookmarklet() {
 		(window.myBookmarklet = function() {
 			function getSelText() {
