@@ -28,10 +28,11 @@
 	var uri = ios.newURI(document.location, null, null);
 	var bookmarksArray = bmsvc.getBookmarkIdsForURI(uri, {});
 	//alert(bookmarksArray);	
-	alert(document.location);	
+		
 					  
 	function initMyBookmarklet() {
 		(window.myBookmarklet = function() {
+		/*
 			function getSelText() {
 				var s = '';
 				if (window.getSelection) {
@@ -43,6 +44,8 @@
 				}
 				return s;
 			}
+			*/
+			alert(document.location);
 			/*
 			if ($("#wikiframe").length == 0) {
 				var s = "";
