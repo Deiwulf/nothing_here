@@ -34,6 +34,7 @@
 				}
 				return s;
 			}
+			/*
 			if ($("#wikiframe").length == 0) {
 				var s = "";
 				s = getSelText();
@@ -64,7 +65,7 @@
 				$("#wikiframe_veil").fadeOut(750);
 				$("#wikiframe iframe").slideUp(500);
 				setTimeout("$('#wikiframe').remove()", 750);
-			});
+			});*/
 		})();
 	}
 
