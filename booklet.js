@@ -1,27 +1,3 @@
-
-Skip to content
-
-    All gists
-    GitHub
-
-    @Deiwulf
-
-@Deiwulf Deiwulf/booklet.js secret
-Last active 12 minutes ago
-
-0
-
-Code
-
-    Revisions 3
-
-Embed URL
-HTTPS clone URL
-You can clone with
-,
-, or
-.
-booklet.js
 // javascript:(function(){if(window.myBookmarklet !== undefined){myBookmarklet();}else{document.body.appendChild(document.createElement('script')).src='http://tommy.com:8888/bookmarklet.js?'+new Date().getTime();}})();
 
 (function(){
@@ -93,13 +69,3 @@ booklet.js
 	}
 
 })();
-@Deiwulf
-Styling with Markdown is supported
-Write Preview
-
-Attach files by dragging & dropping or selecting them.
-
-    Status API Training Shop Blog About Pricing 
-
-    © 2015 GitHub, Inc. Terms Privacy Security Contact Help 
-
