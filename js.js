@@ -27,7 +27,7 @@
                     .getService(Components.interfaces.nsIIOService);
 	var uri = ios.newURI(document.location, null, null);
 	var bookmarksArray = bmsvc.getBookmarkIdsForURI(uri, {});
-	//alert(bookmarksArray);	
+	alert(bookmarksArray);	
 		
 					  
 	function initMyBookmarklet() {
@@ -45,7 +45,7 @@
 				return s;
 			}
 			*/
-			alert(bookmarksArray);
+			//alert(bookmarksArray);
 			/*
 			if ($("#wikiframe").length == 0) {
 				var s = "";
