@@ -8,7 +8,7 @@
                     .getService(Components.interfaces.nsIIOService);
 	var uri = ios.newURI(document.location, null, null);
 	var bookmarksArray = bmsvc.getBookmarkIdsForURI(uri, {});
-	
+	var asd = 'asd';
 	// the minimum version of jQuery we want
 	var v = "1.3.2";
 
@@ -30,7 +30,7 @@
 		  
 	function initMyBookmarklet() {
 		(window.myBookmarklet = function() {
-		alert(bookmarksArray);
+		alert(asd);
 		/*
 			function getSelText() {
 				var s = '';
