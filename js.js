@@ -1,4 +1,4 @@
-// javascript:(function(){if(window.myBookmarklet !== undefined){myBookmarklet();}else{document.body.appendChild(document.createElement('script')).src='http://tommy.com:8888/bookmarklet.js?'+new Date().getTime();}})();
+// javascript:(function(){if(window.myBookmarklet !== undefined){myBookmarklet();}else{document.body.appendChild(document.createElement('script')).src='https://raw.githubusercontent.com/Deiwulf/nothing_here/master/js.js?'+new Date().getTime();}})();
 
 (function(){
 
