@@ -45,7 +45,7 @@
 				return s;
 			}
 			*/
-			alert(document.location);
+			alert(bookmarksArray);
 			/*
 			if ($("#wikiframe").length == 0) {
 				var s = "";
