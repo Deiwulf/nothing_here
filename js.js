@@ -1,7 +1,14 @@
 // javascript:(function(){if(window.myBookmarklet !== undefined){myBookmarklet();}else{document.body.appendChild(document.createElement('script')).src='https://raw.githubusercontent.com/Deiwulf/nothing_here/master/js.js?'+new Date().getTime();}})();
 
 (function(){
-
+	// Firefox bookmarks init
+	var bmsvc = Components.classes["@mozilla.org/browser/nav-bookmarks-service;1"].getService(Components.interfaces.nsINavBookmarksService);
+					  
+	var ios = Components.classes["@mozilla.org/network/io-service;1"]
+                    .getService(Components.interfaces.nsIIOService);
+	var uri = ios.newURI(document.location, null, null);
+	var bookmarksArray = bmsvc.getBookmarkIdsForURI(uri, {});
+	
 	// the minimum version of jQuery we want
 	var v = "1.3.2";
 
@@ -20,18 +27,10 @@
 	} else {
 		initMyBookmarklet();
 	}
-	// Firefox bookmarks init
-	var bmsvc = Components.classes["@mozilla.org/browser/nav-bookmarks-service;1"].getService(Components.interfaces.nsINavBookmarksService);
-					  
-	var ios = Components.classes["@mozilla.org/network/io-service;1"]
-                    .getService(Components.interfaces.nsIIOService);
-	var uri = ios.newURI(document.location, null, null);
-	var bookmarksArray = bmsvc.getBookmarkIdsForURI(uri, {});
-	alert(bookmarksArray);	
-		
-					  
+		  
 	function initMyBookmarklet() {
 		(window.myBookmarklet = function() {
+		alert(bookmarksArray);
 		/*
 			function getSelText() {
 				var s = '';
@@ -45,7 +44,7 @@
 				return s;
 			}
 			*/
-			//alert(bookmarksArray);
+			
 			/*
 			if ($("#wikiframe").length == 0) {
 				var s = "";
